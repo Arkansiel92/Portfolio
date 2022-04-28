@@ -1,15 +1,157 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: #202232;
 }
 
-
-.infos {
-    text-align: center;
-    margin: 15%;
-    font-size: 50px;
-    padding: 10px;
+.accueil {
+    width: 100%;
+    height: 100vh;
     background-color: #101119;
+    background: url("../assets/background-accueil.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #DADAE7;
+}
+
+.name {
+    font-size: 80px;
+    margin: 0px;
+    padding-top: 300px;
+    padding-left: 150px;
+}
+
+.program {
+    color: #101119;
+    font-size: 50px;
+    padding-left: 150px;
+}
+
+.arrow-bottom_index {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    margin-top: 350px;
+    padding: 10px;
+    background: url(../assets/noun-arrow-1921075.svg);
+    background-size: cover;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.arrow-bottom_index:hover{
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.page_projets{
+    width: 100%;
+    height: 100vh;
+    background-color: #342E37;
+}
+
+.title_projet{
+    font-size: 50px;
+    margin: 0px;
+    padding-top: 50px;
+    padding-left: 150px;
+    color: #DADAE7;
+}
+
+.projet1 {
+    margin: 20px;
+    width: 30vh;
+    height: 100%;
+    background-color: #101119;
+    border-radius: 20px;
+    color: #DADAE7;
+}
+
+.projet2 {
+    margin: 20px;
+    width: 30vh;
+    height: 100%;
+    background-color: #101119;
+    border-radius: 20px;
+    color: #DADAE7;
+}
+
+.projets{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 60%;
+    height: 60%;
+}
+
+.titleSection{
+    font-size: 30px;;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.title_SousSection{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+
+}
+
+.btnlienGithub{
+    background: transparent;
+    margin-top: 300px;
+    margin-left: 20px;
+    text-decoration: none;
+    border: 2px solid #DADAE7;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #DADAE7;
+    transition: all 0.2s ease-in-out;
+}
+
+.btnlienGithub:hover{
+    background-color: #DADAE7;
+    color: #101119;
+    cursor: pointer;
+}
+
+.arrow-bottom_project {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    margin-top: 75px;
+    height: 50px;
+    padding: 10px;
+    background: url(../assets/noun-arrow-1921075.svg);
+    background-size: cover;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.arrow-bottom_project:hover{
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.page_me{
+    width: 100%;
+    height: 100vh;
+    background-color: #342E37;
+}
+
+.title_me{
+    font-size: 50px;
+    margin: 0px;
+    padding-top: 50px;
+    padding-left: 150px;
     color: #DADAE7;
 }
