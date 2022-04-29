@@ -5,16 +5,59 @@ html {
 body {
     margin: 0;
     padding: 0;
-}
-
-.accueil {
-    width: 100%;
-    height: 100vh;
-    background-color: #101119;
     background: url("../assets/background-accueil.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar{
+    margin: 0px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    background-color: rgb(7, 16, 19, .5);
+}
+
+.navbar li {
+    font-size: 25px;
+    margin: 10px;
+    margin-left: 80px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.navbar li:hover {
+    color: #101119;
+    border-radius: 6px;
+    background-color: #DADAE7;
+}
+
+.li_contact {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    color: #DADAE7;
+    border-radius: 6px;
+    background: transparent;
+    border: 2px solid #DADAE7;
+    cursor: pointer;
+}
+
+.li_contact:hover {
+    color: #101119;
+    border-color: #101119;
+    background-color: #DADAE7;
+}
+
+
+
+.accueil {
+    width: 100%;
+    height: 100vh;
     color: #DADAE7;
 }
 
@@ -26,6 +69,7 @@ body {
 }
 
 .program {
+    position: absolute;
     color: #101119;
     font-size: 50px;
     padding-left: 150px;
@@ -37,8 +81,8 @@ body {
     margin-right: auto;
     width: 50px;
     height: 50px;
-    margin-top: 350px;
     padding: 10px;
+    margin-top: 450px;
     background: url(../assets/noun-arrow-1921075.svg);
     background-size: cover;
     border-radius: 50%;
@@ -53,84 +97,113 @@ body {
 .page_projets{
     width: 100%;
     height: 100vh;
-    background-color: #342E37;
 }
 
 .title_projet{
+    position: relative;
     font-size: 50px;
     margin: 0px;
-    padding-top: 50px;
+    padding-top: 120px;
     padding-left: 150px;
     color: #DADAE7;
 }
 
-.projet1 {
-    margin: 20px;
-    width: 30vh;
+.container_miniprojets {
+    position: absolute;
+    width: 20%;
     height: 100%;
-    background-color: #101119;
-    border-radius: 20px;
-    color: #DADAE7;
+    margin-left: 80%;
+    justify-content: center;
+    opacity: .5;
+    background-color: #101119 ;
 }
 
-.projet2 {
-    margin: 20px;
-    width: 30vh;
-    height: 100%;
-    background-color: #101119;
-    border-radius: 20px;
-    color: #DADAE7;
-}
-
-.projets{
-    display: flex;
-    justify-content: space-between;
+.progressBar {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    width: 60%;
-    height: 60%;
+    top: 95%;
+    width: 80%;
+    height: 10px;
+    border-radius: 6px;
+    background-color: #6CC551 ;
+    animation: progression-animation 10s infinite;
+    animation-timing-function: linear;
 }
 
-.titleSection{
-    font-size: 30px;;
-    margin-top: 50px;
-    margin-left: 20px;
+@keyframes progression-animation {
+    0% {width: 0%;}
+
+    100% {width: 80%;}
 }
 
-.title_SousSection{
-    font-size: 20px;
-    margin-top: 30px;
-    margin-left: 20px;
+.title_miniprojet {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 83%;
+    font-size: 50px;
+    color: #6CC551;
+}
+
+.info_projet {
+    top: 120%;
+    position: absolute;
+    margin-left: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 
 }
 
-.btnlienGithub{
-    background: transparent;
-    margin-top: 300px;
-    margin-left: 20px;
+.info_projet img {
+    margin: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.info_projet p {
+    font-size: 25px;
+    color: #6CC551;
+
+}
+
+.img_projet {
+    border: 4px solid;
+    position: absolute;
+    border-radius: 6px;
+    margin: 15%;
+}
+
+.btnGithub {
+    position: absolute;
+    margin-left: 85%;
+    top: 175%;
     text-decoration: none;
+    font-size: 25px;
+    background: transparent;
+    padding: 10px 30px;
+    color: #DADAE7;
     border: 2px solid #DADAE7;
     border-radius: 6px;
-    font-size: 20px;
-    color: #DADAE7;
-    transition: all 0.2s ease-in-out;
-}
-
-.btnlienGithub:hover{
-    background-color: #DADAE7;
-    color: #101119;
     cursor: pointer;
 }
+
+.btnGithub:hover {
+    color: #101119;
+    border-color: #101119;
+    background-color: #DADAE7;
+}
+
+
 
 .arrow-bottom_project {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50px;
-    margin-top: 75px;
     height: 50px;
     padding: 10px;
+    margin-top: 670px;
     background: url(../assets/noun-arrow-1921075.svg);
     background-size: cover;
     border-radius: 50%;
@@ -145,13 +218,13 @@ body {
 .page_me{
     width: 100%;
     height: 100vh;
-    background-color: #342E37;
 }
 
 .title_me{
     font-size: 50px;
     margin: 0px;
-    padding-top: 50px;
+    padding-top: 120px;
     padding-left: 150px;
     color: #DADAE7;
 }
+

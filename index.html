@@ -9,32 +9,48 @@
 </head>
 <body>
     <div class="accueil">
+        <ul class="navbar">
+            <li class="li_accueil">Accueil</li>
+            <li class="li_projets">Projets</li>
+            <li class="li_me">A propos de moi</li>
+            <li class="li_contact">Me contacter</li>
+        </ul>
         <h2 class="name"></h2>
         <h3 class="program"></h3>
         <div class="arrow-bottom_index"></div>
     </div>
     <div class="page_projets">
-        <h2 class="title_projet">Mes projets</h2>
-        <div class="projets">
-            <div class="projet1">
-                <p class="titleSection">RPG-Tic</p>
-                <p class="title_SousSection">Python</p>
-                <p class="title_SousSection">Kivy</p>
-                <button class="btnlienGithub">GitHub</button>
-            </div>
-            <div class="projet2">
-                <p class="titleSection">Hecatombe</p>
-                <p class="title_SousSection">CSS</p>
-                <p class="title_SousSection">Javascript</p>
-                <button class="btnlienGithub">GitHub</button>
-            </div>
+        <div class="container_miniprojets">
+            <div class="containerProgressBar"></div>
+            <div class="progressBar"></div>
         </div>
+        <h2 class="title_miniprojet">Hecatombe</h2>
+        <div class="info_projet">
+            <img src="assets/noun-time-4730589.svg" alt="svg temps">
+            <p class="timeProjet">2 semaines</p>
+            <img src="assets/noun-team-4721561.svg" alt="svg équipe">
+            <p class="teamProjet">équipe de 4</p>
+            <img src="assets/noun-programme-file-3612958.svg" alt="svg file">        
+            <p class="fileProjet">Javascript</p>
+        </div>
+        <button class="btnGithub">GitHub</button>
+        <img class="img_projet" src="assets/Rpg_js.png" alt="">
+
+        <h2 class="title_projet">Mes projets</h2>
         <div class="arrow-bottom_project"></div>
     </div>
     <div class="page_me">
         <h2 class="title_me">Et moi dans tout ça ?</h2>
-    </div>
+        <div class="description_moi">
+            <p>Actuellement en 1ère année à Hetic en Bachelor Développeur Web. 
+                Je suis à la recherche d'un stage de 3 mois pour parfaire les compétences acquises au seins de ma première année de formation. 
+                Le numérique m'a toujours intéressé et je me suis naturellement dirigé vers ces métiers, et plus particulièrement développeur Web.
+                Ma curiosité, mon ouverture d'esprit et ma détermination sont des qualités qui me décrivent et 
+                qui me seront d'une grande aide pour appréhender les problématiques du métier ! 
+            </p>
+        </div>
 
+    </div>
 </body>
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script src="app.js"></script>
