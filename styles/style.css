@@ -127,7 +127,7 @@ body {
     height: 10px;
     border-radius: 6px;
     background-color: #6CC551 ;
-    animation: progression-animation 10s infinite;
+    animation: progression-animation 5s infinite;
     animation-timing-function: linear;
 }
 
@@ -142,7 +142,7 @@ body {
     margin-top: 5%;
     margin-left: 83%;
     font-size: 50px;
-    color: #6CC551;
+    color: #DADAE7;
 }
 
 .info_projet {
@@ -163,7 +163,7 @@ body {
 
 .info_projet p {
     font-size: 25px;
-    color: #6CC551;
+    color: #DADAE7;
 
 }
 
@@ -228,3 +228,29 @@ body {
     color: #DADAE7;
 }
 
+.description_moi {
+    height: 450px;
+    width: 50vh;
+}
+
+.description_moi p {
+    font-size: 25px;
+    word-spacing: 8px;
+    color: #DADAE7;
+    padding-top: 50px;
+    padding-left: 150px;
+}
+
+.divCompetences {
+    color: #DADAE7;
+    padding-top: 30px;
+    margin-left: 55%;
+}
+
+.title_competences {
+    font-size: 50px;
+}
+
+.Competences {
+    font-size: 25px;
+}
